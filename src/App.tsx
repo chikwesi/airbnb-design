@@ -571,19 +571,19 @@ function App() {
           viewport={{ once: true, margin: '-25%' }}
         >
           <Box maxW={'20%'} variants={SlideInLeftItemVariant}>
-            <Image src="../src/assets/calvin-klein.png" />
+            <Image src="/calvin-klein.png" />
           </Box>
           <Box maxW={'20%'} variants={SlideInLeftItemVariant}>
-            <Image src="../src/assets/mary-kay.png" />
+            <Image src="/mary-kay.png" />
           </Box>
           <Box maxW={'20%'} variants={SlideInLeftItemVariant}>
-            <Image src="../src/assets/prada.png" />
+            <Image src="/prada.png" />
           </Box>
           <Box maxW={'20%'} variants={SlideInLeftItemVariant}>
-            <Image src="../src/assets/versace.png" />
+            <Image src="/versace.png" />
           </Box>
           <Box maxW={'20%'} variants={SlideInLeftItemVariant}>
-            <Image src="../src/assets/christian-dior.png" />
+            <Image src="/christian-dior.png" />
           </Box>
         </Flex>
       </Container>
