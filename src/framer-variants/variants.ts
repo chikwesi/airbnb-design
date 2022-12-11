@@ -83,7 +83,7 @@ export const SlideInLeftFeedBackVariant = {
     x: 0,
     opacity: 1,
     transition: {
-      ease: 'easeIn',
+      ease: 'easeOut',
       duration: 0.5,
     },
   },
@@ -91,8 +91,8 @@ export const SlideInLeftFeedBackVariant = {
 
 export const SlideDiagRightItemVariant = {
   hidden: {
-    x: -300,
-    y: 300,
+    x: -150,
+    y: 150,
     opacity: 0,
   },
   show: {
@@ -100,8 +100,8 @@ export const SlideDiagRightItemVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      ease: 'easeIn',
-      duration: 0.4,
+      ease: 'easeOut',
+      duration: 0.5,
     },
   },
 }
@@ -113,7 +113,7 @@ export const ExpandWidthVariant = {
   show: {
     width: '100%',
     transition: {
-      ease: 'easeIn',
+      ease: 'easeOut',
       duration: 0.4,
     },
   },
@@ -136,7 +136,7 @@ export const FadeInVariant = {
   show: {
     opacity: 1,
     transition: {
-      ease: 'easeIn',
+      ease: 'easeOut',
       duration: 0.6,
       staggerChildren: 0.2,
       when: 'beforeChildren',

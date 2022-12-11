@@ -18,6 +18,8 @@ import {
   Heading,
   HeadingProps,
   HStack,
+  IconButton,
+  IconButtonProps,
   Image,
   ImageProps,
   StackProps,
@@ -40,3 +42,4 @@ export const MotionAccordion = motion<AccordionProps>(Accordion)
 export const MotionAccordionButton = motion<AccordionButtonProps>(AccordionButton)
 export const MotionAccordionItem = motion<AccordionItemProps>(AccordionItem)
 export const MotionAccordionPanel = motion<AccordionPanelProps>(AccordionPanel)
+export const MotionIconButton = motion<IconButtonProps>(IconButton)

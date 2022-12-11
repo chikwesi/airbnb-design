@@ -1,21 +1,24 @@
-import { Heading, Icon, IconButton } from '@chakra-ui/react'
+import { Heading, Icon } from '@chakra-ui/react'
 import { BsHandbag } from 'react-icons/bs'
 import {
   MotionFlex as Flex,
   MotionBox as Box,
   MotionText as Text,
+  MotionIconButton as IconButton
 } from './framer'
 
 const variant = {
   hidden: {
-    y: '-100px',
+    y: -20,
+    opacity: 0,
   },
   show: {
     y: 0,
+    opacity:1,
     transition: {
-      // ease: 'easeIn',
-      duration: 1.2,
-      // when: 'beforeChildren',
+      ease: 'easeOut',
+      duration: 0.4,
+      staggerChildren: 0.1
     },
   },
 }
@@ -35,8 +38,14 @@ function Header() {
             .
           </Text>
         </Heading>
-        <Box variants={variant} initial="hidden" animate="show">
-          <Flex alignItems={'center'} gap={'10'}>
+        <Box>
+          <Flex
+            alignItems={'center'}
+            gap={'10'}
+            variants={variant}
+            initial="hidden"
+            animate="show"
+          >
             <Text>Product</Text>
             <Text>About</Text>
             <Text>Blog</Text>
@@ -45,7 +54,10 @@ function Header() {
               bg={'orange.400'}
               color={'white'}
               borderRadius={'full'}
-              icon={<Icon as={BsHandbag} />} aria-label={''}            />
+              icon={<Icon as={BsHandbag} />}
+              variants={variant}
+              aria-label={''}
+            />
           </Flex>
         </Box>
       </Flex>
