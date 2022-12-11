@@ -303,9 +303,9 @@ function App() {
       </Container>
 
       {/* Start Product Metrics */}
-      <Box position={'relative'} py={'20'}>
+      <Box position={'relative'}>
         <Box
-          width={'75%'}
+          width={'50%'}
           bgColor={'red.100'}
           top={'0'}
           position={'absolute'}
@@ -313,7 +313,16 @@ function App() {
           height={'100%'}
         ></Box>
         <Container maxW={'container.lg'} zIndex={'1'} position={'relative'}>
-          <Flex gap={'20'} alignItems={'center'}>
+          <Flex gap={'20'} alignItems={'center'} py={'20'} pos={'relative'}>
+            <Box
+              minW={'84%'}
+              position={'absolute'}
+              height={'full'}
+              top={0}
+              left={0}
+              bgColor={'red.100'}
+              zIndex={-1}
+            ></Box>
             <Box
               variants={SlideUpVariant}
               initial="hidden"
