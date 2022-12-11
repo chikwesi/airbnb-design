@@ -17,7 +17,7 @@ export const SlideUpItemVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      ease: 'easeIn',
+      ease: [0, 0.71, 0.2, 1.01],
       duration: 0.4,
     },
   },
@@ -68,7 +68,7 @@ export const SlideInLeftItemVariant = {
     x: 0,
     opacity: 1,
     transition: {
-      ease: 'easeIn',
+      ease: [0, 0.71, 0.2, 1.01],
       duration: 0.8,
     },
   },
