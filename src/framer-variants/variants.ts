@@ -10,16 +10,15 @@ export const SlideUpVariant = {
 
 export const SlideUpItemVariant = {
   hidden: {
-    y: 100,
+    y: 300,
     opacity: 0,
   },
   show: {
     y: 0,
     opacity: 1,
     transition: {
-      type: 'spring',
       ease: 'easeIn',
-      duration: 0.8,
+      duration: 0.4,
     },
   },
 }

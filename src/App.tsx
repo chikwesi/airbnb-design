@@ -45,20 +45,6 @@ import {
   SlideUpVariant,
 } from './framer-variants'
 
-const variant = {
-  hidden: {
-    opacity: 0,
-  },
-  show: {
-    opacity: 1,
-    transition: {
-      ease: 'easeIn',
-      duration: 0.5,
-      when: 'beforeChildren',
-    },
-  },
-}
-
 function App() {
   return (
     <Box bgColor={'blackAlpha.50'} overflow={'hidden'}>
@@ -66,9 +52,6 @@ function App() {
         <Header></Header>
       </Container>
       <Container
-        variants={variant}
-        initial="hidden"
-        animate="show"
         maxW={'container.lg'}
         position={'relative'}
       >
@@ -79,11 +62,13 @@ function App() {
           top={0}
           zIndex={0}
           boxSize={'full'}
+          variants={SlideUpVariant} initial="hidden" animate="show"
         >
           <Image
             boxSize={'full'}
             objectFit={'contain'}
             objectPosition={'bottom right'}
+            variants={SlideUpItemVariant}
             src="https://img.freepik.com/free-photo/skincare-makeup-concept-beautiful-asian-female-woman-with-healthy-facial-skin-close-up-portrait-studio-shot_609648-832.jpg?w=2000&t=st=1670579661~exp=1670580261~hmac=24407469cf8db8dcad5b2e1c0b88c412a8208741bc17171c3b0dd4a9fbe13a2e"
           />
         </Box>
