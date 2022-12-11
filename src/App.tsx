@@ -588,7 +588,7 @@ function App() {
       </Container>
 
       {/* Partners */}
-      <Container maxW={'container.lg'} py={'32'}>
+      <Container maxW={'container.lg'} py={'32'} mb={10}>
         <Flex
           justifyContent={'space-between'}
           alignItems={'baseline'}
