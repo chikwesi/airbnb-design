@@ -97,7 +97,18 @@ function App() {
               variants={SlideUpItemVariant}
             >
               Let your skin
-              <br /> Going out
+              <br /> Going
+              <Image
+                height={'10'}
+                borderRadius={'full'}
+                display={'inline-block'}
+                outline={'1px solid'}
+                outlineColor={'white'}
+                outlineOffset={'-4px'}
+                mx={'3'}
+                src="https://images.unsplash.com/photo-1586212653598-40f9046fe5e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              />
+              Out.
             </Heading>
             <Text variants={SlideUpItemVariant}>
               We want to bring to the world throught our <br /> products that
@@ -154,9 +165,10 @@ function App() {
               top={'-50'}
               left={'-50'}
               background={'white'}
-              color={'white'}
               variants={RotateVariant}
               animate="show"
+              width={'50%'}
+              paddingTop="30%"
               _before={{
                 content: '""',
                 display: 'block',
@@ -172,11 +184,18 @@ function App() {
               clipPath={
                 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'
               }
+            ></Box>
+            <Text
+              pos={'absolute'}
+              fontSize={'xs'}
+              color={'white'}
+              top={'-2'}
+              left={'-3'}
+              transform="rotate(320deg)"
+              zIndex={'1'}
             >
-              <Text pos={'relative'} zIndex={'1'}>
-                New
-              </Text>
-            </Box>
+              New
+            </Text>
             <Image
               src="https://images.unsplash.com/photo-1586212653598-40f9046fe5e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               variants={ScaleDownImageVariant}
