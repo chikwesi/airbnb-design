@@ -125,6 +125,7 @@ export const RotateVariant = {
     transition: {
       repeat: Infinity,
       duration: 2,
+      ease: 'linear'
     },
   },
 }

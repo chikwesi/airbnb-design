@@ -204,6 +204,10 @@ function App() {
                 color={"purple.600"}
                 width={'27%'}
                 padding={1}
+                variants={ScaleUpVariant}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
                 _before={{ content: '""', paddingTop: '100%', float: 'left' }}
               >
                 <ExploreComponent/>
