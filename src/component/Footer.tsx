@@ -16,12 +16,35 @@ import {
   FaRegPaperPlane,
   FaRegCopyright,
 } from 'react-icons/fa'
-import { SlideUpItemVariant, SlideUpVariant } from '../framer-variants'
 import {
   MotionBox as Box,
   MotionVStack as VStack,
   MotionFlex as Flex,
 } from './framer'
+
+const SlideUpVariant = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+      when: 'beforeChildren',
+    },
+  },
+}
+const SlideUpItemVariant = {
+  hidden: {
+    y: 600,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: 'easeInOut',
+      duration: 0.7,
+    },
+  },
+}
 
 function Footer() {
   return (

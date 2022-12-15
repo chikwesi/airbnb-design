@@ -139,7 +139,7 @@ export const RotateVariant = {
     rotate: 360,
     transition: {
       repeat: Infinity,
-      duration: 2,
+      duration: 4,
       ease: 'linear'
     },
   },
