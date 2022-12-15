@@ -30,7 +30,7 @@ import {
   BsSquare,
   BsSquareFill,
 } from 'react-icons/bs'
-import { FaArrowDown, FaLongArrowAltDown, FaQuoteLeft } from 'react-icons/fa'
+import { FaLongArrowAltDown, FaQuoteLeft } from 'react-icons/fa'
 import {
   ExpandWidthVariant,
   FadeInVariant,
