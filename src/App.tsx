@@ -302,9 +302,6 @@ function App() {
           <Box
             width={'100%'}
             variants={SlideUpItemLongVariant}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
           >
             <Heading
               as={'h2'}
