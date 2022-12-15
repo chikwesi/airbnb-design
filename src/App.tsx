@@ -41,6 +41,7 @@ import {
   SlideInLeftFeedBackVariant,
   SlideInLeftItemVariant,
   SlideInLeftVariant,
+  SlideUpItemLongVariant,
   SlideUpItemVariant,
   SlideUpVariant,
 } from './framer-variants'
@@ -193,7 +194,7 @@ function App() {
                 zIndex={1}
                 bgColor={'#ffffff70'}
                 border={'1px'}
-                borderColor={"white"}
+                borderColor={'white'}
                 right={0}
                 top={0}
                 borderRadius={'full'}
@@ -201,7 +202,7 @@ function App() {
                 justifyContent={'center'}
                 alignItems={'center'}
                 backdropFilter="blur(4px)"
-                color={"purple.600"}
+                color={'purple.600'}
                 width={'27%'}
                 padding={1}
                 variants={ScaleUpVariant}
@@ -210,8 +211,12 @@ function App() {
                 viewport={{ once: true }}
                 _before={{ content: '""', paddingTop: '100%', float: 'left' }}
               >
-                <ExploreComponent/>
-                <Icon color={'orange.400'} as={FaLongArrowAltDown} position={'absolute'}></Icon>
+                <ExploreComponent />
+                <Icon
+                  color={'orange.400'}
+                  as={FaLongArrowAltDown}
+                  position={'absolute'}
+                ></Icon>
               </Box>
 
               <Box width={'100%'}>
@@ -243,7 +248,7 @@ function App() {
               viewport={{ once: true, margin: '-25%' }}
             >
               <Heading
-                variants={SlideUpItemVariant}
+                variants={SlideUpItemLongVariant}
                 fontWeight={'normal'}
                 size={'2xl'}
               >
@@ -254,7 +259,7 @@ function App() {
                 products.
               </Heading>
               <HStack mt={'10'} gap={'10'}>
-                <Box variants={SlideUpItemVariant}>
+                <Box variants={SlideUpItemLongVariant}>
                   <Text fontWeight={'medium'} mb={'5'}>
                     Where are products made?
                   </Text>
@@ -263,7 +268,7 @@ function App() {
                     Natus amet aliquid unde minima optio
                   </Text>
                 </Box>
-                <Box variants={SlideUpItemVariant}>
+                <Box variants={SlideUpItemLongVariant}>
                   <Text fontWeight={'medium'} mb={'5'}>
                     Where are products made?
                   </Text>
@@ -288,7 +293,13 @@ function App() {
         viewport={{ once: true, margin: '-50%' }}
       >
         <Flex gap={'10'} mb={'5'}>
-          <Box width={'100%'} variants={SlideUpItemVariant}>
+          <Box
+            width={'100%'}
+            variants={SlideUpItemLongVariant}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             <Heading
               as={'h2'}
               fontWeight={'normal'}
@@ -571,7 +582,7 @@ function App() {
                 initial="hidden"
                 whileInView="show"
                 variants={ScaleUpVariant}
-                viewport={{ once: true, margin: '-10%' }}
+                viewport={{ once: true }}
               >
                 <Image
                   objectFit="cover"

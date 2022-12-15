@@ -7,7 +7,6 @@ export const SlideUpVariant = {
     },
   },
 }
-
 export const SlideUpItemVariant = {
   hidden: {
     y: 300,
@@ -17,8 +16,24 @@ export const SlideUpItemVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      ease: [0, 0.71, 0.2, 1.01],
+      ease: 'easeOut',
       duration: 0.4,
+    },
+  },
+}
+
+
+export const SlideUpItemLongVariant = {
+  hidden: {
+    y: 600,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: 'easeOut',
+      duration: 0.6  ,
     },
   },
 }
@@ -30,7 +45,7 @@ export const ScaleUpVariant = {
   show: {
     scale: 1,
     transition: {
-      duration: 0.8,
+      duration: 1,
       ease: [0, 0.71, 0.2, 1.01],
     },
   },
@@ -43,7 +58,7 @@ export const ScaleDownImageVariant = {
   show: {
     scale: 1,
     transition: {
-      duration: 0.8,
+      duration: 1,
       ease: [0, 0.71, 0.2, 1.01],
     },
   },
@@ -53,7 +68,7 @@ export const SlideInLeftVariant = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
       when: 'beforeChildren',
     },
   },
@@ -61,15 +76,15 @@ export const SlideInLeftVariant = {
 
 export const SlideInLeftItemVariant = {
   hidden: {
-    x: 300,
+    x: 400,
     opacity: 0,
   },
   show: {
     x: 0,
     opacity: 1,
     transition: {
-      ease: [0, 0.71, 0.2, 1.01],
-      duration: 0.8,
+      ease: 'easeOut',
+      duration: 0.4,
     },
   },
 }
