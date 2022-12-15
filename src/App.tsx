@@ -188,7 +188,15 @@ function App() {
             />
           </Box>
           <Flex gap={'20'} alignItems={'center'} py={'32'}>
-            <Box minW={'40%'} maxW={'40%'} pos={'relative'}>
+            <Box
+              minW={'40%'}
+              maxW={'40%'}
+              pos={'relative'}
+              variants={ScaleUpVariant}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
               <Box
                 pos={'absolute'}
                 zIndex={1}
@@ -206,9 +214,6 @@ function App() {
                 width={'27%'}
                 padding={1}
                 variants={ScaleUpVariant}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
                 _before={{ content: '""', paddingTop: '100%', float: 'left' }}
               >
                 <ExploreComponent />
@@ -222,14 +227,11 @@ function App() {
               <Box width={'100%'}>
                 <Box
                   overflow={'hidden'}
-                  variants={ScaleUpVariant}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true }}
                   borderTopRadius={'full'}
                   boxSize={'full'}
                   pos={'relative'}
                   py={'65%'}
+                  variants={ScaleUpVariant}
                 >
                   <Image
                     pos={'absolute'}

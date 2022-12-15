@@ -40,7 +40,7 @@ export const SlideUpItemLongVariant = {
 
 export const ScaleUpVariant = {
   hidden: {
-    scale: 0.2,
+    scale: 0.1,
   },
   show: {
     scale: 1,
