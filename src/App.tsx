@@ -192,10 +192,8 @@ function App() {
               minW={'40%'}
               maxW={'40%'}
               pos={'relative'}
-              variants={ScaleUpVariant}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
+             
+       
             >
               <Box
                 pos={'absolute'}
@@ -214,6 +212,9 @@ function App() {
                 width={'27%'}
                 padding={1}
                 variants={ScaleUpVariant}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
                 _before={{ content: '""', paddingTop: '100%', float: 'left' }}
               >
                 <ExploreComponent />
@@ -232,6 +233,9 @@ function App() {
                   pos={'relative'}
                   py={'65%'}
                   variants={ScaleUpVariant}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true }}
                 >
                   <Image
                     pos={'absolute'}
