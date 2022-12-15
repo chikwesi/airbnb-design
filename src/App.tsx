@@ -30,7 +30,7 @@ import {
   BsSquare,
   BsSquareFill,
 } from 'react-icons/bs'
-import { FaQuoteLeft } from 'react-icons/fa'
+import { FaArrowDown, FaLongArrowAltDown, FaQuoteLeft } from 'react-icons/fa'
 import {
   ExpandWidthVariant,
   FadeInVariant,
@@ -44,6 +44,7 @@ import {
   SlideUpItemVariant,
   SlideUpVariant,
 } from './framer-variants'
+import ExploreComponent from './component/exporeProduct'
 
 function App() {
   return (
@@ -51,10 +52,7 @@ function App() {
       <Container maxW={'container.lg'} py={'5'} pos={'relative'}>
         <Header></Header>
       </Container>
-      <Container
-        maxW={'container.lg'}
-        position={'relative'}
-      >
+      <Container maxW={'container.lg'} position={'relative'}>
         <Box
           position={'absolute'}
           blendMode={'multiply'}
@@ -62,7 +60,9 @@ function App() {
           top={0}
           zIndex={0}
           boxSize={'full'}
-          variants={SlideUpVariant} initial="hidden" animate="show"
+          variants={SlideUpVariant}
+          initial="hidden"
+          animate="show"
         >
           <Image
             boxSize={'full'}
@@ -187,25 +187,49 @@ function App() {
             />
           </Box>
           <Flex gap={'20'} alignItems={'center'} py={'32'}>
-            <Box minW={'40%'} maxW={'40%'}>
+            <Box minW={'40%'} maxW={'40%'} pos={'relative'}>
               <Box
-                borderTopRadius={'full'}
-                width={'100%'}
-                py={'65%'}
-                pos={'relative'}
-                overflow={'hidden'}
-                variants={ScaleUpVariant}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
+                pos={'absolute'}
+                zIndex={1}
+                bgColor={'#ffffff70'}
+                border={'1px'}
+                borderColor={"white"}
+                right={0}
+                top={0}
+                borderRadius={'full'}
+                display={'flex'}
+                justifyContent={'center'}
+                alignItems={'center'}
+                backdropFilter="blur(4px)"
+                color={"purple.600"}
+                width={'27%'}
+                padding={1}
+                _before={{ content: '""', paddingTop: '100%', float: 'left' }}
               >
-                <Image
-                  pos={'absolute'}
-                  left={0}
-                  top={0}
-                  variants={ScaleDownImageVariant}
-                  src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                ></Image>
+                <ExploreComponent/>
+                <Icon color={'orange.400'} as={FaLongArrowAltDown} position={'absolute'}></Icon>
+              </Box>
+
+              <Box width={'100%'}>
+                <Box
+                  overflow={'hidden'}
+                  variants={ScaleUpVariant}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true }}
+                  borderTopRadius={'full'}
+                  boxSize={'full'}
+                  pos={'relative'}
+                  py={'65%'}
+                >
+                  <Image
+                    pos={'absolute'}
+                    left={0}
+                    top={0}
+                    variants={ScaleDownImageVariant}
+                    src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  ></Image>
+                </Box>
               </Box>
             </Box>
             <Box
