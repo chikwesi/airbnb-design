@@ -1,13 +1,12 @@
 import {
-  Flex,
   Heading,
   HStack,
   Icon,
   IconButton,
   Image,
   Text,
-  VStack,
 } from '@chakra-ui/react'
+import { MotionFlex as Flex } from './framer'
 import { GrStar } from 'react-icons/gr'
 import { FiHeart } from 'react-icons/fi'
 import { useContext } from 'react'
@@ -39,11 +38,7 @@ export const ApartmentCard = (prop: ApartmentCardT) => {
       minW={'full'}
       width="full"
       onClick={() => setValue(prop)}
-      _hover={{
-        cursor: 'pointer',
-        boxShadow: 'xl'
-      }}
-
+      whileHover={{ boxShadow: 'var(--chakra-shadows-xl)', cursor: 'pointer' }}
     >
       {/* TODO: Add transition on hover */}
       <IconButton

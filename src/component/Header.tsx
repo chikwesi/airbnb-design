@@ -31,7 +31,7 @@ function Navigation() {
       templateColumns={'repeat(3, 1fr)'}
       alignItems={'center'}
       justifyContent={'space-between'}
-      height="100%"
+      flexGrow={1}
     >
       <Image src="/logo.svg" width="28" />
       <Flex
@@ -69,17 +69,18 @@ function Navigation() {
 
 export const Header = () => {
   return (
-    <Container
-      minW={'100%'}
-      pos={'relative'}
+    <Flex
       as={'header'}
       borderBottom="1px"
       borderColor={'gray.200'}
-      height="8vh"
+      minW={'100%'}
+      minH="8vh"
+      pos={'relative'}
       px={7}
+      direction="column"
     >
       <Navigation />
-    </Container>
+    </Flex>
   )
 }
 

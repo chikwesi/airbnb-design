@@ -335,29 +335,41 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
     open: {
       opacity: '1',
       zIndex: 2,
-      // transition: {
-      //   ease: 'easeIn',
-      //   duration: 0,
-      //   when: 'beforeChildren',
-      // },
+      transition: {
+        ease: 'easeIn',
+        duration: 0,
+        when: 'beforeChildren',
+      },
     },
     closed: {
       opacity: '0',
       zIndex: -1,
       transition: {
-        delay: 0.5,
-        // when: 'afterChildren',
+        delay: 0.3,
+        when: 'afterChildren',
       },
     },
   }
   const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 1, x: '100%' },
+    open: {
+      opacity: 1,
+      x: 0,
+      transition: { ease: 'easeInOut', duration: 0.5, delay: 0.1 },
+    },
+    closed: {
+      opacity: 1,
+      x: '100%',
+      transition: { ease: 'easeInOut', duration: 0.5 },
+    },
   }
-  
+
   const buttonVariants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 1, x: '100vw' },
+    closed: {
+      opacity: 0,
+      x: '75vw',
+      transition: { ease: 'easeInOut', duration: 0.1 },
+    },
   }
 
   return (
@@ -385,8 +397,6 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
         mt={5}
         // @ts-ignore no problem in operation, although type error appears.
         transition={{ ease: 'easeInOut', duration: 0.5 }}
-        initial="closed"
-        animate={show ? 'open' : 'closed'}
         variants={buttonVariants}
         onClick={() => toggleDetail(false)}
         _hover={{
@@ -394,7 +404,7 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
           color: 'white',
           outline: 'none',
           border: 'none',
-          transition: '1s easein',
+          //transition: '1s easein',
         }}
       ></IconButton>
       <Grid
@@ -407,8 +417,6 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
         height="100%"
         templateColumns="7fr 4fr"
         templateRows="repeat(2, 1fr)"
-        // @ts-ignore no problem in operation, although type error appears.
-        transition={{ ease: 'easeInOut', duration: 0.5 }}
         variants={variants}
       >
         <Grid

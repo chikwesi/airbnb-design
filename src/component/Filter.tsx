@@ -42,7 +42,7 @@ export const StickyFilter = (prop: StickyFilterProp) => {
       background="white"
       borderBottom="1px"
       borderColor="gray.200"
-      height="8vh"
+      minH="8vh"
     >
       <Grid
         templateColumns=".5fr 1fr .5fr"

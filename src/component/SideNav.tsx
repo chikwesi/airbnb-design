@@ -1,13 +1,17 @@
 import {
-  Text,
   Icon,
   List,
   ListItem,
-  VStack,
-  Flex,
   ChakraStyledOptions,
   chakra,
 } from '@chakra-ui/react'
+
+import {
+  MotionVStack as VStack,
+  MotionText as Text,
+  MotionFlex as Flex,
+} from './framer'
+
 import {
   AirbnbIcon,
   BeachFrontIcon,
@@ -53,8 +57,43 @@ const options: NavOptions[] = [
   { name: 'Desert', icon: DesertIcon },
 ]
 export const Nav = (props: ChakraStyledOptions) => {
+  const textVariants = {
+    open: {
+      display: 'block',
+    },
+    closed: {
+      display: 'none',
+    },
+  }
+  const variants = {
+    open: {
+      opacity: 1,
+      minWidth: '130px',
+      backgroud: '#000',
+      transition: { ease: 'easeInOut', duration: 0.2, when: 'beforeChildren' },
+    },
+    closed: {
+      minWidth: '25px',
+    },
+  }
+
+  const parentVariant = {
+    open: {
+     // transition: { ease: 'easeInOut', when: 'beforeChildren' },
+    },
+    closed: {
+      //transition: { ease: 'easeInOut', when: 'afterChildren' },
+    },
+  }
+
   return (
-    <VStack {...props} role="group">
+    <VStack
+      {...props}
+      initial="closed"
+      whileHover="open"
+      variants={parentVariant}
+      role="group"
+    >
       <List>
         {options.map(({ name, icon }, i) => (
           <ListItem
@@ -63,16 +102,19 @@ export const Nav = (props: ChakraStyledOptions) => {
             py={4}
             borderRight={i == 0 ? '4px' : 0}
             borderColor="red.600"
-            _hover={{ bg: 'blackAlpha.200' }}
+           // _hover={{ bg: 'blackAlpha.200' }}
           >
-            <Flex gap={2} alignItems="center" fontSize={'sm'}>
+            <Flex
+              gap={2}
+              alignItems="center"
+              fontSize={'sm'}
+              variants={variants}
+              whiteSpace={'nowrap'}
+            >
               <Icon as={icon}></Icon>
               <Text
-                lineHeight={0}
-                display={'none'}
-                whiteSpace="nowrap"
-                transition="display 5s ease-in"
-                _groupHover={{ display: 'inline-block' }}
+                variants={textVariants}
+                //_groupHover={{ display: 'inline-block' }}
               >
                 {name}
               </Text>

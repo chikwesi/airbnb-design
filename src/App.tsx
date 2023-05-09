@@ -31,15 +31,10 @@ function App() {
 
   useLayoutEffect(() => {
     const body = document.querySelector('body') as HTMLBodyElement
-    const scrollY = `${window.scrollY}px`
-    console.log(scrollPos)
     if (showFilter || showDetail) {
-      body.style.position = 'fixed'
-      setScrollPos(scrollY)
-      body.style.top = `-${scrollY}`
+      body.style.overflow = 'hidden'
     } else {
-      body.style.position = 'static'
-      body.style.top = `-${scrollPos}`
+      body.style.overflow = 'auto'
     }
   }, [showFilter, showDetail])
 
