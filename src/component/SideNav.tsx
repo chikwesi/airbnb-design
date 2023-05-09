@@ -8,7 +8,6 @@ import {
   ChakraStyledOptions,
   chakra,
 } from '@chakra-ui/react'
-import { BsFillHouseFill } from 'react-icons/bs'
 import {
   AirbnbIcon,
   BeachFrontIcon,

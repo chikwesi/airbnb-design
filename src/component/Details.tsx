@@ -17,7 +17,6 @@ import {
   SliderFilledTrack,
   SliderTrack,
   Image,
-  IconButton,
   InputGroup,
   InputLeftElement,
 } from '@chakra-ui/react'
@@ -29,7 +28,7 @@ import { GrStar } from 'react-icons/gr'
 import { IoBedOutline } from 'react-icons/io5'
 import { MdOutlineHotel, MdOutlineShower } from 'react-icons/md'
 import { ApartmentContext } from '../App'
-import { MotionGrid as Grid } from './framer'
+import { MotionGrid as Grid, MotionIconButton as IconButton } from './framer'
 import {
   WorkspaceIcon,
   CheckInIcon,
@@ -355,6 +354,12 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 1, x: '100%' },
   }
+  
+  const buttonVariants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 1, x: '100vw' },
+  }
+
   return (
     <Grid
       bg="blackAlpha.600"
@@ -380,7 +385,9 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
         mt={5}
         // @ts-ignore no problem in operation, although type error appears.
         transition={{ ease: 'easeInOut', duration: 0.5 }}
-        variants={variants}
+        initial="closed"
+        animate={show ? 'open' : 'closed'}
+        variants={buttonVariants}
         onClick={() => toggleDetail(false)}
         _hover={{
           bg: 'black',
