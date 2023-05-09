@@ -38,7 +38,9 @@ export const ApartmentCard = (prop: ApartmentCardT) => {
       pos="relative"
       minW={'full'}
       width="full"
+      onClick={() => setValue(prop)}
       _hover={{
+        cursor: 'pointer',
         boxShadow: 'xl'
       }}
 
@@ -51,7 +53,6 @@ export const ApartmentCard = (prop: ApartmentCardT) => {
         right="2"
         top="2"
         icon={<Icon as={FiHeart} />}
-        onClick={() => setValue(prop)}
         aria-label={''}
         _hover={{
           bg: 'black',
