@@ -79,7 +79,7 @@ export const Nav = (props: ChakraStyledOptions) => {
 
   const parentVariant = {
     open: {
-     // transition: { ease: 'easeInOut', when: 'beforeChildren' },
+      // transition: { ease: 'easeInOut', when: 'beforeChildren' },
     },
     closed: {
       //transition: { ease: 'easeInOut', when: 'afterChildren' },
@@ -102,7 +102,11 @@ export const Nav = (props: ChakraStyledOptions) => {
             py={4}
             borderRight={i == 0 ? '4px' : 0}
             borderColor="red.600"
-           _hover={{ bg: 'blackAlpha.200' }}
+            bg="white"
+            _hover={{
+              bg: 'blackAlpha.200',
+              transition: 'all .4s ease-in-out'
+            }}
           >
             <Flex
               gap={2}
