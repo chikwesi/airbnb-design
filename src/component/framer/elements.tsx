@@ -1,12 +1,4 @@
 import {
-  Accordion,
-  AccordionButton,
-  AccordionButtonProps,
-  AccordionItem,
-  AccordionItemProps,
-  AccordionPanel,
-  AccordionPanelProps,
-  AccordionProps,
   Box,
   BoxProps,
   Button,
@@ -15,6 +7,8 @@ import {
   ContainerProps,
   Flex,
   FlexProps,
+  Grid,
+  GridProps,
   Heading,
   HeadingProps,
   HStack,
@@ -38,8 +32,5 @@ export const MotionImage = motion<ImageProps>(Image)
 export const MotionFlex = motion<FlexProps>(Flex)
 export const MotionVStack = motion<StackProps>(VStack)
 export const MotionHStack = motion<StackProps>(HStack)
-export const MotionAccordion = motion<AccordionProps>(Accordion)
-export const MotionAccordionButton = motion<AccordionButtonProps>(AccordionButton)
-export const MotionAccordionItem = motion<AccordionItemProps>(AccordionItem)
-export const MotionAccordionPanel = motion<AccordionPanelProps>(AccordionPanel)
+export const MotionGrid = motion<GridProps>(Grid)
 export const MotionIconButton = motion<IconButtonProps>(IconButton)
