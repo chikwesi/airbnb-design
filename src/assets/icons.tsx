@@ -203,19 +203,19 @@ export const ViewsIcon = () => (
     id="svg1864590514_464"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M21.25 21.75a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5v-12a9 9 0 0 1 18 0v12Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M3.25 9.75h18m-18 6h18m-9-6v-9m-3 9v13.5m6-13.5v13.5M5.56 3.729l6.69 6.021m6.69-6.021L12.25 9.75"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -231,46 +231,46 @@ export const HomesIcon = () => (
     <path
       d="M.788 20.571H23.25"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M9.773 20.571H2.286v-9.733l7.487-1.497v11.23Zm11.98 0H9.773V4.101l11.98 5.24v11.23Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M12.768 8.967a.374.374 0 0 1 .374.374m-.749 0c0-.207.168-.374.375-.374m0 .749a.375.375 0 0 1-.375-.375"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M13.142 9.341a.374.374 0 0 1-.374.375"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M18.758 20.571h-5.99v-4.492a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5l-.01 4.492Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m.75 11.146 9.023-1.805M8.238 3.429l15.008 6.565m-4.488-1.972V4.101h2.995v5.24"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -286,9 +286,9 @@ export const KitchenIcon = () => (
     <path
       d="M.75 4.5H22.5a.75.75 0 0 1 .75.75V9a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 8.25 9V4.5M9.75 15v1.5m3 0v-3m3 1.5v1.5m6-1.5v1.5m-3 0v-3m-10.5 6h15"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -302,26 +302,26 @@ export const SurfingIcon = () => (
     id="svg152636106_941"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M17.25 6.25a2.625 2.625 0 1 0 0-5.25 2.625 2.625 0 0 0 0 5.25Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M16.454 18.993c.03-.12.046-.244.046-.368v-2.947a3 3 0 0 0-1.336-2.5l-.57-.38.7-1.758c.56.263 1.1.567 1.616.91l4 2.669a1.502 1.502 0 0 0 1.665-2.5l-4-2.669a15.54 15.54 0 0 0-6.668-2.48A4.494 4.494 0 0 1 8.721 5a1.502 1.502 0 1 0-2.5 1.664A7.486 7.486 0 0 0 10.5 9.75l-1.21 1.214a3.01 3.01 0 0 0-.79 2.848l.3 1.211-2.2 1.652a1.5 1.5 0 0 0-.473.6"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m9.954 17.909.648-.485a3 3 0 0 0 1.155-2.924c.05.044 1.743 1.18 1.743 1.18v2.82m-12.75.875 22.5 3.75M2.137 19.606l-.844 2.532a.751.751 0 0 0 1.022.92l5.509-2.5"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -335,34 +335,34 @@ export const MansionIcon = () => (
     id="svg-658590604_833"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M16.5 21.25h-9V11.5l3.876-5.814a.75.75 0 0 1 1.248 0L16.5 11.5v9.75Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M12 11.875a.375.375 0 1 1 0 .75.375.375 0 0 1 0-.75"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M13.5 21.25h-3v-3a1.5 1.5 0 0 1 3 0v3Zm-12-13.5h6v13.5h-5a1 1 0 0 1-1-1V7.75Zm15 0h6v12.5a1 1 0 0 1-1 1h-5V7.75Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m2.25 7.75 2.25-4.5 2.25 4.5m10.5 0 2.25-4.5 2.25 4.5M4.5 12.25v1.5m15-1.5v1.5m-18 0h6m9 0h6m-18 3v1.5m15-1.5v1.5"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -378,39 +378,39 @@ export const LuxeIcon = () => (
     <path
       d="M.75 14.254v9"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M15.75 21.754a3 3 0 0 0-3-3H9a3 3 0 0 0-3-3H.75v6h15Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M6 18.754h3m-6.75-7.5h21M12.75.754v1.5"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M21.75 11.254a9 9 0 1 0-18 0h18Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m21.75 11.254-.671 1.346a3 3 0 0 1-2.679 1.654h-7.15"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -424,41 +424,41 @@ export const TreehouseIcon = () => (
     id="svg-462846524_1004"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M7.374 1.084a.75.75 0 0 0-1.248 0L2.25 7.5H4.5l-2.9 4.128a.75.75 0 0 0 .65 1.122h9a.75.75 0 0 0 .651-1.122L9.001 7.5h2.25L7.373 1.084Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M6.75 12.75v4.582"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M19.262 1.023a.614.614 0 0 0-1.021 0L15.069 6h1.841l-2.578 3.582a.613.613 0 0 0 .533.918h7.77a.613.613 0 0 0 .533-.918L20.592 6h1.841l-3.171-4.977Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M18.751 10.5v4.035M.805 18a13.517 13.517 0 0 1 15.673 5.254"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M10.969 18.518A15.7 15.7 0 0 1 21.75 14.25c.506 0 1.006.023 1.5.07"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -472,27 +472,27 @@ export const CampingIcon = () => (
     id="svg602817648_597"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M3 23.25a1.5 1.5 0 0 1-1.36-2.134l9-19.5a1.5 1.5 0 0 1 2.719 0l9 19.5a1.5 1.5 0 0 1-1.36 2.134H3Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M7.5 23.25h9l-3.158-8.171a1.5 1.5 0 0 0-2.684 0L7.5 23.25Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M8.25 6.75h7.406m-9.462 4.5h11.612m-5.806 3v9"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -508,23 +508,23 @@ export const BeachFrontIcon = () => (
     <path
       d="m8.25 7.5 6.35 3.887a.729.729 0 0 0 1.109-.6 4.1 4.1 0 0 0-2.189-4.083 5.953 5.953 0 0 0-2.02-.592M8.25 7.5H1.5a.769.769 0 0 1-.684-1.033 4.165 4.165 0 0 1 3.957-2.68 5.549 5.549 0 0 1 2.627.744"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m12.864 6.429 3.309-1.97a.653.653 0 0 0 .085-1.073 4.264 4.264 0 0 0-4.428-.673 3.244 3.244 0 0 0-1.53 1.426"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M5.907 3.939 4.712 1.72a.656.656 0 0 1 .6-.969 11.57 11.57 0 0 1 2.188.343 4.454 4.454 0 0 1 2.808 3.045M23.25 20.25h-8.867a1.5 1.5 0 0 1-1.312-.772L10.5 14.25m9.752 6 .75 3m-7.392-3.216-1.608 3.216m-.395-6.75H16.5M.75 23.25C.867 21.258.84 12.828 7.5 7.5m.75 0A31.7 31.7 0 0 0 6 23.25"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -539,17 +539,17 @@ export const FarmsIcon = () => (
     <path
       d="m.75 13.24 3-7.2L12 1.72m11.25 11.52-3-7.2L12 1.72m-8.25 21.6v-10.8m16.5 10.8v-10.8M.75 23.32h22.5m-15.75 0v-7.2h9v7.2m-9-7.2 9 7.2m0-7.2-9 7.2"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M12 10.36c1.243 0 2.25-.967 2.25-2.16S13.243 6.04 12 6.04s-2.25.967-2.25 2.16 1.007 2.16 2.25 2.16Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -563,27 +563,27 @@ export const CastlesIcon = () => (
     id="svg-264235133_850"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M19.5 1.72c.414 0 .75.322.75.72V8.2c0 .398-.336.72-.75.72h-15c-.414 0-.75-.322-.75-.72V2.44c0-.398.336-.72.75-.72h2.25c.414 0 .75.322.75.72v.72c0 .795.672 1.44 1.5 1.44s1.5-.645 1.5-1.44v-.72c0-.398.336-.72.75-.72h1.5c.414 0 .75.322.75.72v.72c0 .795.672 1.44 1.5 1.44s1.5-.645 1.5-1.44v-.72c0-.398.336-.72.75-.72h2.25ZM5.25 8.92l-1.5 14.4h16.5l-1.5-14.4H5.25v0Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M14.25 23.32h-4.5v-5.04c0-1.193 1.007-2.16 2.25-2.16s2.25.967 2.25 2.16v5.04Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M.75 23.32h22.5"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -597,26 +597,26 @@ export const IslandsIcon = () => (
     id="svg1840104705_899"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M23.25 21.75c0-2.485-5.037-4.5-11.25-4.5S.75 19.265.75 21.75v1.5h22.5v-1.5Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m15.634 8.477-.811 8.916m-6.336.081 5.247-9.619m0 0 8.276 2.709a.75.75 0 0 0 .975-.861 4.73 4.73 0 0 0-3.6-4.016 6.82 6.82 0 0 0-2.4-.082m-3.251 2.25L6.2 9.9a.75.75 0 0 1-.934-.873 4.756 4.756 0 0 1 3.616-4.09 6.347 6.347 0 0 1 3.112.079"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m18.578 5.567 3.1-3.116a.747.747 0 0 0-.21-1.211 4.869 4.869 0 0 0-5.088.51 3.708 3.708 0 0 0-1.28 2.01m-4.921 1.024-1.95-2.116a.748.748 0 0 1 .393-1.242c.827-.16 1.668-.24 2.51-.239A5.081 5.081 0 0 1 15.1 3.76"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -631,24 +631,24 @@ export const VineyardsIcon = () => (
     <path
       d="M13.5.75a2.728 2.728 0 0 0-1.66 3.009"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M5.25 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm6.75 0a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm0 12a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm-3.75-6a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm7.5 0a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm3-6a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M9.75.75h6"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -661,19 +661,19 @@ export const PoolsIcon = () => (
     id="svg1447657479_705"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M18.423 9.971a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM4.831 3.428a.746.746 0 0 1 .368.3l2.544 3.986 5.851 2.2c.244.093.46.247.627.447l3.86 4.655a1.5 1.5 0 1 1-2.31 1.915l-3.605-4.351-5.946-2.233a1.5 1.5 0 0 1-.736-.6L1.6 3.653a.75.75 0 0 1 .9-1.1l2.331.875Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m9.163 8.247-1.055 2.809m-.935-4.235-2.76 1.252M.75 21.672a4.668 4.668 0 0 0 3.75-1.9 4.649 4.649 0 0 0 7.5 0 4.65 4.65 0 0 0 7.5 0 4.668 4.668 0 0 0 3.75 1.9"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -688,47 +688,47 @@ export const SkiingIcon = () => (
     <path
       d="m12.786 17.122 2.92.315m-3.412-4.895 3.896.421"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M8.759.791a2.25 2.25 0 0 0-2 2.478l2.018 18.642a1.5 1.5 0 0 0 1.652 1.33l1.492-.161a1.5 1.5 0 0 0 1.33-1.652L11.237 2.786A2.25 2.25 0 0 0 8.759.791Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="m12 23.069.079.011 1.492.161a1.5 1.5 0 0 0 1.652-1.33l2.014-18.642a2.25 2.25 0 0 0-4.474-.483L12 9.848m.768 7.106-4.474.483m3.99-4.957-4.474.483M2.25 6.75v16.5m-1.5-3h3"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M2.25.75a1.5 1.5 0 0 0-1.5 1.5v4.5h3v-4.5a1.5 1.5 0 0 0-1.5-1.5Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M21.75 6.75v16.5m-1.5-3h3"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M21.75.75a1.5 1.5 0 0 0-1.5 1.5v4.5h3v-4.5a1.5 1.5 0 0 0-1.5-1.5Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )
@@ -741,27 +741,27 @@ export const DesertIcon = () => (
     id="svg1343181880_921"
   >
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M18.6 17.547a.729.729 0 0 0-.575-.281H5.98a.73.73 0 0 0-.708.907l.678 2.712A3.143 3.143 0 0 0 9 23.266h6c1.442 0 2.7-.982 3.049-2.381l.678-2.712a.726.726 0 0 0-.127-.626Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M12 .766v2.25M1.5 5.668l.75 1.299M4.5 5.668l-.75 1.299m4.007-4.701 1.415 1.75m7.071-1.75-1.415 1.75M22.5 7.168l-.75 1.299M19.5 7.168l.75 1.299"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
-      clip-rule="evenodd"
+      clipRule="evenodd"
       d="M21 8.266a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 1-1.5 1.5h-1.5v-3.75a4.5 4.5 0 1 0-9 0v2.25H6a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 1 0-3 0 4.5 4.5 0 0 0 4.5 4.5h1.5v4.5h9v-3H18a4.5 4.5 0 0 0 4.5-4.5 1.5 1.5 0 0 0-1.5-1.5Z"
       stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 )

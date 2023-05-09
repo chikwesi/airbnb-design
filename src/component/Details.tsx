@@ -20,7 +20,7 @@ import {
   InputGroup,
   InputLeftElement,
 } from '@chakra-ui/react'
-import { useContext } from 'react'
+import { useCallback, useContext } from 'react'
 import { CgClose, CgUserList } from 'react-icons/cg'
 import { CiCalendar } from 'react-icons/ci'
 import { FiHeart, FiShield, FiUpload } from 'react-icons/fi'
@@ -37,6 +37,7 @@ import {
   RareGemIcon,
 } from '../assets/icons'
 import { reviews, reviewsPollData, services } from '../data/details'
+import { GoogleMap, LoadScript, useJsApiLoader } from '@react-google-maps/api'
 
 const BookingForm = ({ cost, rating }: { cost: string; rating: string }) => {
   return (
@@ -302,7 +303,29 @@ const Host = () => {
   )
 }
 
-const Address = () => {
+const Address = ({ location }: { location: string }) => {
+  const containerStyle = {
+    width: '100%',
+    height: '400px',
+  }
+
+  const center = {
+    lat: -3.745,
+    lng: -38.523,
+  }
+
+  const renderMap = useCallback(() => {
+    return (
+      <LoadScript googleMapsApiKey="">
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={10}
+        ></GoogleMap>
+      </LoadScript>
+    )
+  }, [])
+
   return (
     <Box
       py={9}
@@ -314,10 +337,12 @@ const Address = () => {
       <Heading as="h4" fontSize="lg" mb={4} color="black">
         Where you'll be
       </Heading>
-      {/* TODO: Put google map */}
+
+      <Box borderRadius="2xl" overflow="hidden" mb={4}>
+        {renderMap()}
+      </Box>
       <Heading as="h4" fontSize="md" mb={4} color="black" fontWeight="medium">
-        {/* TODO: Make dynamic */}
-        Aspen, Colorado, United States
+        {location}
       </Heading>
       <Text mb={5}>
         The property, given its close proximity to the refreshing hillside town
@@ -330,7 +355,7 @@ const Address = () => {
 }
 
 export const MoreDetails = ({ show }: { show: boolean }) => {
-  const { value, setValue, toggleDetail } = useContext(ApartmentContext)
+  const { value, toggleDetail } = useContext(ApartmentContext)
   const parentVariants = {
     open: {
       opacity: '1',
@@ -653,7 +678,7 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
             <Link color="red">View more</Link>
           </Box>
           <Reviews />
-          <Address />
+          <Address location={String(value?.location)} />
           <Host />
         </Box>
 

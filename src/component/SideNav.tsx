@@ -68,7 +68,7 @@ export const Nav = (props: ChakraStyledOptions) => {
   const variants = {
     open: {
       opacity: 1,
-      minWidth: '130px',
+      minWidth: '180px',
       backgroud: '#000',
       transition: { ease: 'easeInOut', duration: 0.2, when: 'beforeChildren' },
     },
