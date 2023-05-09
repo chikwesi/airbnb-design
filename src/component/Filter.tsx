@@ -19,18 +19,20 @@ import {
   Button,
   Stack,
   calc,
+  useOutsideClick,
 } from '@chakra-ui/react'
 import { MotionBox as Box } from './framer'
 import { ImMap2 } from 'react-icons/im'
 import { BiGridAlt } from 'react-icons/bi'
 import { CiCalendar } from 'react-icons/ci'
 import { FiMinus, FiPlus, FiFilter } from 'react-icons/fi'
+import { useRef } from 'react'
 
 type StickyFilterProp = {
-  toggleFilter: () => void
+  toggleFilter: (flag: boolean) => void
 }
 
-export const StickyFilter = (prop: StickyFilterProp) => {
+export const StickyFilter = ({ toggleFilter }: StickyFilterProp) => {
   return (
     <Container
       minW={'100%'}
@@ -38,7 +40,7 @@ export const StickyFilter = (prop: StickyFilterProp) => {
       px={7}
       top="0px"
       pos="sticky"
-      zIndex="2"
+      zIndex="1"
       background="white"
       borderBottom="1px"
       borderColor="gray.200"
@@ -137,7 +139,7 @@ export const StickyFilter = (prop: StickyFilterProp) => {
             icon={<Icon as={FiFilter} />}
             aria-label={''}
             size="lg"
-            onClick={() => prop.toggleFilter()}
+            onClick={() => toggleFilter(true)}
           />
         </GridItem>
       </Grid>
@@ -145,11 +147,20 @@ export const StickyFilter = (prop: StickyFilterProp) => {
   )
 }
 
-export const MoreFilters = ({
-  showFilter = false,
-}: {
+type MoreFilterPropT = {
   showFilter: boolean
-}) => {
+  toggleFilter: (value: boolean) => void
+}
+
+export const MoreFilters = ({ showFilter, toggleFilter }: MoreFilterPropT) => {
+  const ref = useRef<HTMLElement>(null)
+  useOutsideClick({
+    ref: ref,
+    handler: () => {
+      toggleFilter(false)
+    },
+  })
+
   const parentVariants = {
     open: {
       display: 'block',
@@ -160,7 +171,7 @@ export const MoreFilters = ({
     closed: {
       display: 'none',
       transition: {
-        delay: .3,
+        delay: 0.3,
         when: 'afterChildren',
       },
     },
@@ -180,6 +191,7 @@ export const MoreFilters = ({
       initial="closed"
       animate={showFilter ? 'open' : 'closed'}
       variants={parentVariants}
+      zIndex={2}
     >
       <Box
         position="fixed"
@@ -187,10 +199,11 @@ export const MoreFilters = ({
         bottom={0}
         width="28%"
         bgColor="white"
-        height="85vh"
+        height="84vh"
         overflowY="auto"
-        zIndex={1}
+        ref={ref}
         border="1px"
+        borderTop="none"
         borderColor="gray.200"
         boxShadow="2xl"
         opacity={0}

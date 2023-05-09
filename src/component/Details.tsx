@@ -19,8 +19,9 @@ import {
   Image,
   InputGroup,
   InputLeftElement,
+  useOutsideClick,
 } from '@chakra-ui/react'
-import { useCallback, useContext } from 'react'
+import { useCallback, useContext, useRef } from 'react'
 import { CgClose, CgUserList } from 'react-icons/cg'
 import { CiCalendar } from 'react-icons/ci'
 import { FiHeart, FiShield, FiUpload } from 'react-icons/fi'
@@ -338,7 +339,14 @@ const Address = ({ location }: { location: string }) => {
         Where you'll be
       </Heading>
 
-      <Box borderRadius="2xl" overflow="hidden" mb={4}>
+      <Box
+        borderRadius="2xl"
+        overflow="hidden"
+        mb={4}
+        width="100%"
+        height="400px"
+        bgColor={'blackAlpha.200'}
+      >
         {renderMap()}
       </Box>
       <Heading as="h4" fontSize="md" mb={4} color="black" fontWeight="medium">
@@ -356,6 +364,11 @@ const Address = ({ location }: { location: string }) => {
 
 export const MoreDetails = ({ show }: { show: boolean }) => {
   const { value, toggleDetail } = useContext(ApartmentContext)
+  const ref = useRef<HTMLElement>(null)
+  useOutsideClick({
+    ref: ref,
+    handler: () => toggleDetail(false),
+  })
   const parentVariants = {
     open: {
       opacity: '1',
@@ -443,6 +456,7 @@ export const MoreDetails = ({ show }: { show: boolean }) => {
         templateColumns="7fr 4fr"
         templateRows="repeat(2, 1fr)"
         variants={variants}
+        ref={ref}
       >
         <Grid
           gap={4}

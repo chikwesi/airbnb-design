@@ -27,7 +27,6 @@ function App() {
   const [showFilter, setShowFilter] = useState(false)
   const [detail, setDetail] = useState<ApartmentCardT | null>(null)
   const [showDetail, setShowDetail] = useState(false)
-  const [scrollPos, setScrollPos] = useState('')
 
   useLayoutEffect(() => {
     const body = document.querySelector('body') as HTMLBodyElement
@@ -38,18 +37,14 @@ function App() {
     }
   }, [showFilter, showDetail])
 
-  const handleFilterToggle = () => {
-    setShowFilter((toggle) => !toggle)
+  const handleFilterToggle = (value: boolean) => {
+    setShowFilter((v) => value)
   }
+
 
   const handleSetDetail = (detail: ApartmentCardT | null) => {
     setDetail(detail)
     setShowDetail(true)
-  }
-
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: '-100%' },
   }
 
   return (
@@ -66,7 +61,10 @@ function App() {
         <Flex position="relative">
           <SideNav py={3} borderRight="1px" borderColor="gray.200" />
           <ApartmentListGrid p={'7'} gap={'7'} mb={'5'} />
-          <MoreFilters showFilter={showFilter} />
+          <MoreFilters
+            showFilter={showFilter}
+            toggleFilter={handleFilterToggle}
+          />
           <MoreDetails show={showDetail} />
         </Flex>
       </Box>
