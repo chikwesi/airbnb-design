@@ -102,7 +102,7 @@ export const Nav = (props: ChakraStyledOptions) => {
             py={4}
             borderRight={i == 0 ? '4px' : 0}
             borderColor="red.600"
-           // _hover={{ bg: 'blackAlpha.200' }}
+           _hover={{ bg: 'blackAlpha.200' }}
           >
             <Flex
               gap={2}
